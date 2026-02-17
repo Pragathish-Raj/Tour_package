@@ -1,0 +1,220 @@
+ /* Base Styles */
+ body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This hides horizontal scroll */
+  }
+
+  /* Navigation */
+  .navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 10px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    position: relative;
+  }
+
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover:after {
+    width: 100%;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/assests/new-header-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    animation: zoomInOut 15s infinite alternate;
+  }
+
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  .hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.2s ease;
+  }
+
+  /* Package Cards */
+  .package-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .package-card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+
+  .discount-badge {
+    background: linear-gradient(45deg, #ff4d4d, #f94444);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .duration-badge {
+    background: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+  }
+
+  /* Testimonials */
+  /* .testimonial-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  } */
+
+  /* Newsletter */
+  .newsletter-section {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .newsletter-section:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .newsletter-section:after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  /* Footer */
+  .footer {
+    background: linear-gradient(to right, #1a1a1a, #2c3e50);
+  }
+
+  .footer a {
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+
+  .footer a:hover {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon:hover {
+    background: #0d6efd;
+    transform: translateY(-3px);
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egyptian Adventure Tour Package</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Doubt  css linking -->
+    <link rel="stylesheet" href="../styles/egypt-tour-viewdetails.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="fas fa-plane me-2"></i>TravelWorld
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="..//index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..//view-all-package.html"
+                >Tour Packages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..//contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..//aboutus.html">About Us</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="../login.html" class="btn btn-outline-light me-3">Login</a>
+            <a href="../signup.html" class="btn btn-primary">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-3 fw-bold mb-4">Egyptian Adventure</h1>
+            <p class="lead mb-5">
+              Journey through 5,000 years of history on this 8-day expedition to
+              Egypt's greatest ancient wonders.
+            </p>
+            <a href="#pricing" class="btn btn-egyptian btn-lg">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights" class="py-5 egyptian-pattern-bg">
+      <div class="container">
+        <h2 class="section-title">Package Highlights</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card package-card h-100">
+              <img
+                src="/assests/egypt-pyramid-img.jpg"
+                class="card-img-top"
+                alt="Pyramids of Giza"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Great Pyramids & Sphinx</h5>
+                <p class="card-text">
+                  Private tour of Giza Plateau with camel ride and pyramid
+                  interior access.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card package-card h-100">
+              <img
+                src="/assests/luxors-ancient-temple-img.jpg"
+                class="card-img-top"
+                alt="Luxor Temple"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luxor's Ancient Temples</h5>
+                <p class="card-text">
+                  Explore Karnak, Luxor Temple, and Valley of the Kings with
+                  Egyptologist guide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card package-card h-100">
+              <img
+                src="/assests/egypt-nile-river-img.jpg"
+                class="card-img-top"
+                alt="Nile Cruise"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nile River Cruise</h5>
+                <p class="card-text">
+                  3-night luxury cruise from Luxor to Aswan with guided shore
+                  excursions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section id="itinerary" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Detailed Itinerary</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="itinerary-day">
+              <h4>Day 1: Arrival in Cairo</h4>
+              <ul>
+                <li>Airport transfer to 5-star hotel near Giza</li>
+                <li>Welcome dinner with pyramid view</li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 2: Giza Plateau & Memphis</h4>
+              <ul>
+                <li>Private tour of Great Pyramids and Sphinx</li>
+                <li>Camel ride around the pyramids</li>
+                <li>Entry to Khufu's Pyramid interior</li>
+                <li>
+                  Visit ancient capital Memphis and Step Pyramid of Djoser
+                </li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 3: Egyptian Museum & Fly to Luxor</h4>
+              <ul>
+                <li>Tour Egyptian Museum (Tutankhamun's treasures)</li>
+                <li>Flight to Luxor</li>
+                <li>Evening sound and light show at Karnak Temple</li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 4: Luxor West Bank</h4>
+              <ul>
+                <li>Valley of the Kings (3 tomb entries included)</li>
+                <li>Temple of Hatshepsut</li>
+                <li>Colossi of Memnon</li>
+                <li>Board Nile cruise ship</li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 5: Nile Cruise - Edfu & Kom Ombo</h4>
+              <ul>
+                <li>Morning visit to Edfu Temple (Horus)</li>
+                <li>Afternoon visit to Kom Ombo Temple</li>
+                <li>Evening galabeya party on board</li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 6: Aswan Highlights</h4>
+              <ul>
+                <li>Philae Temple boat trip</li>
+                <li>Unfinished Obelisk</li>
+                <li>Optional Abu Simbel excursion (extra)</li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 7: Return to Cairo</h4>
+              <ul>
+                <li>Flight back to Cairo</li>
+                <li>Free afternoon for Khan el-Khalili bazaar shopping</li>
+                <li>Farewell dinner cruise on the Nile</li>
+              </ul>
+            </div>
+
+            <div class="itinerary-day">
+              <h4>Day 8: Departure</h4>
+              <ul>
+                <li>Transfer to airport</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inclusions Section -->
+    <section id="inclusions" class="py-5 egyptian-pattern-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="section-title text-start">Package Inclusions</h2>
+            <div class="highlight-card p-4 mb-4 bg-white">
+              <ul class="list-unstyled">
+                <li class="inclusion-item">
+                  <i class="fas fa-check-circle"></i> 7 nights accommodation
+                  (5-star hotels & cruise)
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-check-circle"></i> Daily breakfast, 4
+                  lunches, 5 dinners
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-check-circle"></i> All entry tickets to
+                  mentioned sites
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-check-circle"></i> Domestic flights
+                  (Cairo-Luxor, Aswan-Cairo)
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-check-circle"></i> 3-night Nile cruise with
+                  all meals
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-check-circle"></i> Licensed Egyptologist
+                  guide throughout
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title text-start">Exclusions</h2>
+            <div class="highlight-card p-4 mb-4 bg-white">
+              <ul class="list-unstyled">
+                <li class="inclusion-item">
+                  <i class="fas fa-times-circle"></i> International airfare
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-times-circle"></i> Egypt entry visa ($25)
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-times-circle"></i> Travel insurance
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-times-circle"></i> Abu Simbel excursion
+                </li>
+                <li class="inclusion-item">
+                  <i class="fas fa-times-circle"></i> Personal expenses & tips
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title">Pricing & Options</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card package-card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Explorer Package</h5>
+                <div class="price-tag mb-3">Rs : 150,000/-</div>
+                <p class="card-text">per person</p>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> 4-star hotels
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Standard Nile
+                    cruise
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Group tours
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-egyptian">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card package-card h-100 border-warning border-2">
+              <div class="card-header bg-warning text-dark text-center">
+                <h5>Popular Choice</h5>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Pharaoh's Journey</h5>
+                <div class="price-tag mb-3">Rs : 220,000/-</div>
+                <p class="card-text">per person</p>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> 5-star luxury
+                    hotels
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Deluxe Nile
+                    cruise
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Private tours
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Hot air
+                    balloon over Valley of Kings
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-egyptian">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card package-card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Royal Expedition</h5>
+                <div class="price-tag mb-3">Rs : 320,000/-</div>
+                <p class="card-text">per person</p>
+                <ul class="list-unstyled mb-4">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Luxury palace
+                    hotels
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Suite on
+                    5-star cruise
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> VIP private
+                    tours
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Abu Simbel
+                    included
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i> Personal
+                    Egyptologist
+                  </li>
+                </ul>
+                <a href="#contact" class="btn btn-egyptian">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8 mx-auto">
+            <div class="card bg-white border-0 shadow">
+              <div class="card-body p-4">
+                <h4 class="text-center mb-4">Special Add-Ons</h4>
+                <div class="row">
+                  <div class="col-md-4 text-center mb-3">
+                    <div class="hieroglyph-icon">𓃭</div>
+                    <h5>Abu Simbel Excursion</h5>
+                    <p>From Rs : 25,000/-</p>
+                  </div>
+                  <div class="col-md-4 text-center mb-3">
+                    <div class="hieroglyph-icon">𓊵</div>
+                    <h5>Hot Air Balloon</h5>
+                    <p>From Rs : 15,000/-</p>
+                  </div>
+                  <div class="col-md-4 text-center mb-3">
+                    <div class="hieroglyph-icon">𓆓</div>
+                    <h5>Scuba Diving</h5>
+                    <p>From Rs : 20,000/-</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 egyptian-pattern-bg">
+      <div class="container">
+        <h2 class="section-title">Book Your Egyptian Adventure</h2>
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="card shadow">
+              <div class="card-body p-5">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Full Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="+91 Enter number"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="package" class="form-label"
+                      >Package Interest</label
+                    >
+                    <select class="form-select" id="package">
+                      <option selected>Select a package</option>
+                      <option value="standard">
+                        Explorer Package (Rs : 150,000/-)
+                      </option>
+                      <option value="deluxe">
+                        Pharaoh's Journey (Rs : 220,000/-)
+                      </option>
+                      <option value="luxury">
+                        Royal Expedition (Rs : 320,000/-)
+                      </option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="dates" class="form-label"
+                      >Preferred Travel Dates</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="dates"
+                      placeholder="Select dates"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label"
+                      >Special Requests</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      placeholder="Any special arrangements?"
+                    ></textarea>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-egyptian">
+                      Submit Inquiry
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 footer">
+      <div class="container">
+        <div class="row g-4 text-white">
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-4">
+              <i class="fas fa-plane me-2"></i>TravelWorld
+            </h5>
+            <p>
+              Making travel dreams come true since 2010. We specialize in
+              creating unforgettable experiences around the globe.
+            </p>
+            <div class="mt-4">
+              <a href="#" class="social-icon text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="social-icon text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon text-white"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <h6 class="fw-bold mb-4">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="../index.html" class="text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="../view-all-package.html" class="text-decoration-none"
+                  >Tours Package</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="../contact.html" class="text-decoration-none"
+                  >Conductor</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="../aboutus.html" class="text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 text-white">
+            <h6 class="fw-bold mb-4">Contact Us</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>A2Z Holidays chennai
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-phone me-2"></i> +91 6380 956 212
+              </li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> admin@travelworld.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-4 text-white">
+            <h6 class="fw-bold mb-4">Payment Methods</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/196/196578.png"
+                alt="Visa"
+                width="40"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/196/196561.png"
+                alt="Mastercard"
+                width="40"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2504/2504801.png"
+                alt="PayPal"
+                width="40"
+              />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/888/888870.png"
+                alt="Apple Pay"
+                width="40"
+              />
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 bg-secondary" />
+
+        <div class="row text-white">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2023 TravelWorld. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+            <a href="#" class="text-decoration-none">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

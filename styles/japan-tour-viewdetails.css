@@ -1,0 +1,138 @@
+:root {
+  --primary-color: #dc3545;
+  --secondary-color: #6f42c1;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assests/japan-viewdetails-headerbg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.package-card {
+  transition: transform 0.3s;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+}
+
+.highlight-card {
+  border-left: 5px solid var(--primary-color);
+}
+
+.inclusion-item {
+  margin-bottom: 10px;
+}
+
+.inclusion-item i {
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.price-tag {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.btn-japan {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.btn-japan:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.itinerary-day {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.itinerary-day:before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.footer {
+  background: linear-gradient(to right, #1a1a1a, #2c3e50);
+  color: white;
+}
+
+.footer a {
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: #0d6efd;
+  transform: translateY(-3px);
+}
