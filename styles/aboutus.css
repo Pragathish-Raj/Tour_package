@@ -16,7 +16,7 @@
 
       header {
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-          url("/assests/plane-img-for-aboutus-pg.jpg");
+          url("../assests/plane-img-for-aboutus-pg.jpg");
         color: #ffffff;
         padding: 60px 0;
         text-align: center;
